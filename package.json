@@ -1,0 +1,38 @@
+{
+  "name": "lpestetica",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.0.0",
+    "gsap": "^3.12.5",
+    "lenis": "^1.0.40",
+    "lucide-react": "^0.451.0",
+    "next": "^14.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-tsparticles": "^2.12.0",
+    "tailwind-merge": "^2.5.2",
+    "tsparticles-engine": "^2.12.0",
+    "swiper": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.19",
+    "@types/react": "18.2.55",
+    "@types/react-dom": "18.2.19",
+    "autoprefixer": "^10.4.17",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.3.3"
+  }
+}
