@@ -26,7 +26,7 @@ const items: ServiceItem[] = [
     img: "/images/services/Chamada.png",
   },
   {
-    title: "Chamada de vídeo",
+    title: "Mentoria",
     img: "/images/services/Chamada.png",
   },
   {
