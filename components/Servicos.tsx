@@ -16,23 +16,35 @@ import Link from "next/link";
 type ServiceItem = {
   title: string;
   img: string;
+  description: string;
   cardClassName?: string;
   mediaClassName?: string;
 };
 
 const items: ServiceItem[] = [
-  { title: "Tiragens", img: "/images/services/Tiragem.JPG" },
   {
-    title: "Chamada de vídeo",
+    title: "Tiragem de Tarot",
+    img: "/images/services/Tiragem.JPG",
+    description:
+      "Se você busca direcionamento, clareza ou respostas para os conflitos da sua vida, o Tarot te ajuda a compreender o momento que está vivendo. Através das cartas, você acessa o que está oculto e desenvolve mais consciência sobre seus caminhos.",
+  },
+  {
+    title: "Jornada Soullar",
     img: "/images/services/Chamada.png",
+    description:
+      "Um acompanhamento personalizado com 4 sessões, alternando entre Tarot e Reiki, de acordo com a sua necessidade.Indicado para quem sente que está travado, sem clareza ou busca se aprofundar na espiritualidade e no autoconhecimento.Um processo para te ajudar a enxergar com mais consciência e se reconectar com seu propósito.",
   },
   {
     title: "Mentoria",
     img: "/images/services/Chamada.png",
+    description:
+      "Para você que está começando no Tarot ou no Reiki e deseja se desenvolver com segurança e direcionamento.Te acompanho de perto nesse processo, trazendo clareza, prática e aprofundamento na sua jornada.",
   },
   {
     title: "Reiki",
     img: "/images/services/Reik.JPG",
+    description:
+      "Uma terapia energética para limpar, alinhar e equilibrar seu campo. Durante a sessão, acessamos padrões emocionais e energéticos, promovendo desbloqueios e maior fluidez nos seus caminhos.",
   },
 ];
 
@@ -63,6 +75,7 @@ export default function Servicos() {
               key={`${s.title}-${i}`}
               title={s.title}
               img={s.img}
+              description={s.description}
               index={i}
               cardClassName={s.cardClassName}
               mediaClassName={s.mediaClassName}
@@ -77,12 +90,14 @@ export default function Servicos() {
 function ServiceCard({
   title,
   img,
+  description,
 
   cardClassName,
   mediaClassName,
 }: {
   title: string;
   img: string;
+  description: string;
   index: number;
   cardClassName?: string;
   mediaClassName?: string;
@@ -142,10 +157,7 @@ function ServiceCard({
             <DialogContent>
               <DialogHeader>
                 <DialogTitle>{title}</DialogTitle>
-                <DialogDescription>
-                  Um pacote pensado para você, com orientação personalizada e
-                  atendimento exclusivo.
-                </DialogDescription>
+                <DialogDescription>{description}</DialogDescription>
               </DialogHeader>
               <div className="mt-6 flex items-center justify-end gap-3">
                 <Link href="https://api.whatsapp.com/send/?phone=5531995724666&text&type=phone_number&app_absent=0&utm_source=ig">
