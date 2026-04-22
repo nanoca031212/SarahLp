@@ -8,6 +8,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import Particles from "react-tsparticles";
 import type { Engine } from "tsparticles-engine";
 import Image from "next/image";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -151,7 +152,7 @@ export default function Hero() {
             className="heading text-5xl mt-2 md:text-6xl text-neutral-900 text-center md:text-left"
             variants={fadeUp}
           >
-            <SplitText text={"Soullar\u00A0Tarot"} />
+            <SplitText text={"Soullar"} />
           </motion.h1>
           <div className="md:text-left text-center md:pr-8">
             <motion.p
@@ -159,7 +160,7 @@ export default function Hero() {
               variants={fadeUp}
               custom={1}
             >
-              Beleza que transforma vidas. Cuidado que encanta e renova.{" "}
+              Se reconecte com sua essência e encontre direção para a vida.{" "}
               <br className="hidden md:block" /> Aqui, cada detalhe importa para
               realçar.
             </motion.p>
@@ -169,9 +170,11 @@ export default function Hero() {
             variants={fadeUp}
             custom={2}
           >
-            <a href="#agendamento" className="btn btn-accent w-full md:w-auto">
-              Agende sua avaliação
-            </a>
+            <Link href="https://api.whatsapp.com/send/?phone=5531995724666&text&type=phone_number&app_absent=0&utm_source=ig">
+              <div className="btn  btn-accent w-full md:w-auto">
+                Agendar Seu Atendimento
+              </div>
+            </Link>
           </motion.div>
           <div className=" block md:hidden">
             <div className="relative h-96 w-full">

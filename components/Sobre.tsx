@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { fadeUp, staggerContainer } from "@/lib/animations";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Sobre() {
   const primary =
@@ -56,9 +57,9 @@ export default function Sobre() {
             potencializada com dedicação total.
           </motion.p>
           <motion.div className="mt-6" variants={fadeUp} custom={2}>
-            <a href="#agendamento" className="btn btn-accent">
-              Agende sua avaliação
-            </a>
+            <Link href="https://api.whatsapp.com/send/?phone=5531995724666&text&type=phone_number&app_absent=0&utm_source=ig">
+              <div className="btn btn-accent">Agende sua avaliação</div>
+            </Link>
           </motion.div>
         </motion.div>
       </div>

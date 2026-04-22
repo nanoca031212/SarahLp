@@ -11,6 +11,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "./ui/dialog";
+import Link from "next/link";
 
 type ServiceItem = {
   title: string;
@@ -53,7 +54,7 @@ export default function Servicos() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Oferecemos um atendimento exclusivo e completamente personalizado, com
+          Oferecemos um atendimento exclusivo e completamente personalizado.
         </motion.h2>
 
         <div className="mt-10 grid grid-cols-1 items-center gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -76,7 +77,7 @@ export default function Servicos() {
 function ServiceCard({
   title,
   img,
-  index,
+
   cardClassName,
   mediaClassName,
 }: {
@@ -147,25 +148,22 @@ function ServiceCard({
                 </DialogDescription>
               </DialogHeader>
               <div className="mt-6 flex items-center justify-end gap-3">
-                <a
-                  href="#agendamento"
-                  className="btn btn-accent px-5 py-2 text-sm"
-                >
-                  Agendar
-                </a>
+                <Link href="https://api.whatsapp.com/send/?phone=5531995724666&text&type=phone_number&app_absent=0&utm_source=ig">
+                  <div className="btn btn-accent px-5 py-2 text-sm">
+                    Agendar
+                  </div>
+                </Link>
               </div>
             </DialogContent>
           </Dialog>
 
           <div className="absolute inset-x-0 bottom-0 p-5 flex items-end justify-between gap-3">
             <h3 className="text-white text-lg font-semibold">{title}</h3>
-
-            <a
-              href="#agendamento"
-              className="opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all rounded-full bg-accent px-4 py-2 text-white text-sm"
-            >
-              Agendar
-            </a>
+            <Link href="https://api.whatsapp.com/send/?phone=5531995724666&text&type=phone_number&app_absent=0&utm_source=ig">
+              <div className="opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all rounded-full bg-accent px-4 py-2 text-white text-sm">
+                Agendar
+              </div>
+            </Link>
           </div>
         </div>
       </div>

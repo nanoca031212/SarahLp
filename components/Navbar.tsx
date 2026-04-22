@@ -50,9 +50,11 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center">
-          <a href="#agendamento" className="btn btn-accent text-sm shadow-soft">
-            Agendar agora
-          </a>
+          <Link href="https://api.whatsapp.com/send/?phone=5531995724666&text&type=phone_number&app_absent=0&utm_source=ig">
+            <div className="btn btn-accent text-sm shadow-soft">
+              Agendar agora
+            </div>
+          </Link>
         </div>
 
         <button

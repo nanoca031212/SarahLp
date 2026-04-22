@@ -6,6 +6,7 @@ import { Autoplay, A11y } from "swiper/modules";
 import "swiper/css";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 type EventoItem = {
   title: string;
@@ -16,7 +17,7 @@ type EventoItem = {
 const items: EventoItem[] = [
   {
     title: "Práticas de autoconhecimento ",
-    subtitle: "Imersão prática e personalizada",
+    subtitle: "Vivências guiadas para aprofundar sua conexão consigo mesma",
     img: [
       "/images/Eventos/PráticasDeAutoconhecimento/Fotos (37)_Original.JPG",
       "/images/Eventos/PráticasDeAutoconhecimento/Fotos (41)_Original.JPG",
@@ -26,7 +27,8 @@ const items: EventoItem[] = [
   },
   {
     title: "Dinâmicas para leveza e bem estar",
-    subtitle: "Protocolos premium e avaliação completa",
+    subtitle:
+      "Momentos de relaxamento, troca e conexão com outras mulheres, em um espaço seguro e sem julgamentos",
     img: [
       "/images/Eventos/Dinâmicasparalevezabemestar/Fotos (22)_Original.JPG",
       "/images/Eventos/Dinâmicasparalevezabemestar/Fotos (24)_Original.JPG",
@@ -36,7 +38,7 @@ const items: EventoItem[] = [
   },
   {
     title: "Experiência Reiki",
-    subtitle: "Bem-estar e recuperação corporal",
+    subtitle: "Terapia energética para equilíbrio, limpeza e reconexão",
     img: [
       "/images/Eventos/Reiki/sessãoReik (1).jpg",
       "/images/Eventos/Reiki/sessãoReik (2).jpg",
@@ -46,7 +48,8 @@ const items: EventoItem[] = [
   },
   {
     title: "Tarot",
-    subtitle: "Resultados reais e acompanhamento",
+    subtitle:
+      "Leituras e direcionamentos para trazer mais clareza e consciência sobre o seu momento",
     img: [
       "/images/Eventos/Tarot/SessãoTarot (1).jpg",
       "/images/Eventos/Tarot/SessãoTarot (2).jpg",
@@ -95,8 +98,8 @@ export default function SobreEvento() {
               ease: [0.22, 1, 0.36, 1],
             }}
           >
-            Cada experiência é feita sob medida para impactar, gerar valor e
-            entregar resultados reais.
+            Um encontro entre você, sua essência e outras mulheres na mesma
+            sintonia.
           </motion.p>
         </div>
 
@@ -129,7 +132,7 @@ export default function SobreEvento() {
                       </div>
                     </div>
                     <span
-                      className={`inline-flex h-9 w-9 items-center justify-center rounded-full border text-sm transition-colors ${
+                      className={`inline-flex h-9 w-9 items-center px-4 justify-center rounded-full border text-sm transition-colors ${
                         isActive
                           ? "border-accent/60 bg-accent/20 text-accent"
                           : "border-white/15 bg-transparent text-white/70"
@@ -144,12 +147,11 @@ export default function SobreEvento() {
             })}
 
             <div className="hidden pt-4 md:block">
-              <a
-                href="#agendamento"
-                className="inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-medium text-white hover:brightness-110"
-              >
-                Quero participar
-              </a>
+              <Link href="https://api.whatsapp.com/send/?phone=5531995724666&text&type=phone_number&app_absent=0&utm_source=ig">
+                <div className="inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-medium text-white hover:brightness-110">
+                  Quero minha vaga!
+                </div>
+              </Link>
             </div>
           </div>
 
@@ -207,12 +209,11 @@ export default function SobreEvento() {
                       {current.subtitle}
                     </p>
                   </div>
-                  <a
-                    href="#agendamento"
-                    className="hidden md:inline-flex h-11 items-center justify-center rounded-full border border-white/15 bg-white/5 px-5 text-sm text-white/90 hover:bg-white/10"
-                  >
-                    Agendar
-                  </a>
+                  <Link href="https://api.whatsapp.com/send/?phone=5531995724666&text&type=phone_number&app_absent=0&utm_source=ig">
+                    <div className="hidden md:inline-flex h-11 items-center justify-center rounded-full border border-white/15 bg-white/5 px-5 text-sm text-white/90 hover:bg-white/10">
+                      Agendar
+                    </div>
+                  </Link>
                 </div>
                 <div className="mt-4 flex items-center gap-3 text-xs text-white/60">
                   <span className="inline-flex h-2 w-2 rounded-full bg-primary" />
