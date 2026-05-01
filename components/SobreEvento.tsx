@@ -39,9 +39,9 @@ const items: EventoItem[] = [
     title: "Experiência Reiki",
     subtitle: "Terapia energética para equilíbrio, limpeza e reconexão",
     img: [
-      "/images/Eventos/Reiki/sessao1.jpg",
-      "/images/Eventos/Reiki/sessao2.jpg",
-      "/images/Eventos/Reiki/sessao3.JPG",
+      "/images/Eventos/Reiki/sessãoReik (2).jpg",
+      "/images/Eventos/Reiki/sessãoReik (3).jpg",
+      "/images/Eventos/Reiki/sessãoReik (4).jpg",
     ],
   },
   {
@@ -49,7 +49,7 @@ const items: EventoItem[] = [
     subtitle:
       "Leituras e direcionamentos para trazer mais clareza e consciência sobre o seu momento",
     img: [
-      "/images/Eventos/Reiki/SessãoReik (1).jpeg",
+      "/images/Eventos/Reiki/sessãoReik (1).jpg",
 
       "/images/Eventos/Tarot/SessãoTarot (3).jpg",
       "/images/Eventos/Tarot/SessãoTarot (4).jpg",
