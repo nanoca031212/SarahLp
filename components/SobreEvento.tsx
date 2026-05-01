@@ -49,8 +49,6 @@ const items: EventoItem[] = [
     subtitle:
       "Leituras e direcionamentos para trazer mais clareza e consciência sobre o seu momento",
     img: [
-      "/images/Eventos/Reiki/sessãoReik (1).jpg",
-
       "/images/Eventos/Tarot/SessãoTarot (3).jpg",
       "/images/Eventos/Tarot/SessãoTarot (4).jpg",
     ],
