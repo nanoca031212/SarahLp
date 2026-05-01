@@ -13,8 +13,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Clínica Priscila Martins | Estética Avançada",
-  description: "Beleza que transforma. Cuidado que encanta.",
+  title: "Soullar",
+  description: "Tarot terapêutico & Reiki",
   icons: { icon: "/favicon.ico" },
 };
 

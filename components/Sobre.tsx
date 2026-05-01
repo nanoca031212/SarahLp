@@ -42,23 +42,22 @@ export default function Sobre() {
             className="heading text-4xl text-neutral-900"
             variants={fadeUp}
           >
-            Sobre a Dra. Priscila
+            Sobre mim
           </motion.h2>
           <motion.p
             className="mt-4 text-neutral-700 leading-relaxed"
             variants={fadeUp}
             custom={1}
           >
-            Oferecemos um atendimento exclusivo e completamente personalizado,
-            com protocolos clínicos de alta performance desenvolvidos
-            especialmente para você — unindo ciência estética de ponta,
-            segurança em cada procedimento e o cuidado genuíno e acolhedor que
-            você sempre mereceu sentir. Aqui, sua beleza natural é celebrada e
-            potencializada com dedicação total.
+            Ao longo da minha jornada, antes de me tornar terapeuta, fui bióloga
+            e professora. Ao seguir meu chamado na espiritualidade, passei a
+            unir intuição e ciência para criar um espaço de acolhimento e
+            autoconhecimento, onde você pode se reconectar com mais clareza e
+            verdade.
           </motion.p>
           <motion.div className="mt-6" variants={fadeUp} custom={2}>
             <Link href="https://api.whatsapp.com/send/?phone=5531995724666&text&type=phone_number&app_absent=0&utm_source=ig">
-              <div className="btn btn-accent">Agende sua avaliação</div>
+              <div className="btn btn-accent">Agendar atendimento</div>
             </Link>
           </motion.div>
         </motion.div>

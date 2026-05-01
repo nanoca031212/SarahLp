@@ -36,7 +36,7 @@ const items: ServiceItem[] = [
   },
   {
     title: "Mentoria",
-    img: "/images/services/Chamada.png",
+    img: "/images/services/Chamada.JPG",
     description:
       "Para você que está começando no Tarot ou no Reiki e deseja se desenvolver com segurança e direcionamento.Te acompanho de perto nesse processo, trazendo clareza, prática e aprofundamento na sua jornada.",
   },

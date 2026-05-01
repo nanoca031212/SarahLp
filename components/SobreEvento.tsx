@@ -19,10 +19,10 @@ const items: EventoItem[] = [
     title: "Práticas de autoconhecimento ",
     subtitle: "Vivências guiadas para aprofundar sua conexão consigo mesma",
     img: [
-      "/images/Eventos/PráticasDeAutoconhecimento/Fotos (37)_Original.JPG",
-      "/images/Eventos/PráticasDeAutoconhecimento/Fotos (41)_Original.JPG",
+      "/images/Eventos/PráticasDeAutoconhecimento/Fotos (41)_Original.PNG",
       "/images/Eventos/PráticasDeAutoconhecimento/Fotos (230).jpeg",
       "/images/Eventos/PráticasDeAutoconhecimento/Fotos (297).jpeg",
+      "/images/Eventos/Dinâmicasparalevezabemestar/Fotos (194)_Original.JPG",
     ],
   },
   {
@@ -33,14 +33,12 @@ const items: EventoItem[] = [
       "/images/Eventos/Dinâmicasparalevezabemestar/Fotos (22)_Original.JPG",
       "/images/Eventos/Dinâmicasparalevezabemestar/Fotos (24)_Original.JPG",
       "/images/Eventos/Dinâmicasparalevezabemestar/Fotos (128)_Original.JPG",
-      "/images/Eventos/Dinâmicasparalevezabemestar/Fotos (194)_Original.JPG",
     ],
   },
   {
     title: "Experiência Reiki",
     subtitle: "Terapia energética para equilíbrio, limpeza e reconexão",
     img: [
-      "/images/Eventos/Reiki/sessãoReik (1).jpg",
       "/images/Eventos/Reiki/sessãoReik (2).jpg",
       "/images/Eventos/Reiki/sessãoReik (3).jpg",
       "/images/Eventos/Reiki/sessãoReik (4).jpg",
@@ -51,8 +49,8 @@ const items: EventoItem[] = [
     subtitle:
       "Leituras e direcionamentos para trazer mais clareza e consciência sobre o seu momento",
     img: [
-      "/images/Eventos/Tarot/SessãoTarot (1).jpg",
-      "/images/Eventos/Tarot/SessãoTarot (2).jpg",
+      "/images/Eventos/Reiki/sessãoReik (1).jpeg",
+
       "/images/Eventos/Tarot/SessãoTarot (3).jpg",
       "/images/Eventos/Tarot/SessãoTarot (4).jpg",
     ],
