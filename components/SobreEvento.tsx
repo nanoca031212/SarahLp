@@ -86,7 +86,7 @@ export default function SobreEvento() {
             falam por si.
           </motion.h2>
           <motion.p
-            className="text-sm text-white/70 md:text-right"
+            className="text-sm text-white/71 md:text-right"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
