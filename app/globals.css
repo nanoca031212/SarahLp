@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 14px;
+}
+
+html,
+body {
+  @apply bg-white text-neutral-900 antialiased scroll-smooth;
+}
+
+main {
+  @apply overflow-x-hidden;
+}
+
+.glass {
+  @apply bg-white/60 backdrop-blur-md shadow-soft;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-full px-6 py-3 font-medium transition-all;
+}
+
+.btn-primary {
+  @apply bg-primary text-white hover:bg-primary-light;
+}
+
+.btn-accent {
+  @apply bg-accent text-white hover:brightness-110;
+}
+
+.section {
+  @apply max-w-7xl mx-auto px-6 md:px-8;
+}
+
+.heading {
+  @apply font-serif tracking-tight;
+}
+
+.subtitle {
+  @apply text-neutral-600;
+}
+
+.sr-only-focusable:focus {
+  @apply not-sr-only absolute top-2 left-2 bg-white text-neutral-900 px-3 py-2 rounded-md shadow;
+}
+
+.evento-swiper,
+.evento-swiper .swiper-wrapper,
+.evento-swiper .swiper-slide {
+  height: 100%;
+}
